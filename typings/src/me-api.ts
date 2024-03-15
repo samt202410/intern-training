@@ -1,9 +1,4 @@
-import { CreatedUpdatedAt, ID } from "./model";
-
-enum Language {
-  EN = "en",
-  FR = "fr",
-}
+import { CreatedUpdatedAt, ID, Language } from "./model";
 
 enum Gender {
   MALE = "male",

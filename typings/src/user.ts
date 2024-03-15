@@ -1,4 +1,4 @@
-import { ID } from "./model";
+import { ID, UserTypeEnum } from "./model";
 
 const backendResponse = {
   data: {
@@ -52,3 +52,13 @@ interface Address {
 // }
 
 export const user: User = backendResponse.data;
+
+interface LoggedInUser {
+  name: string;
+  userType: UserTypeEnum;
+}
+
+export const loggedInUser: LoggedInUser = {
+  name: "sanyam",
+  userType: UserTypeEnum.MANAGEMENT,
+};
